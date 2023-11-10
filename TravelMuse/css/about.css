@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+--main-color: #8e44ad;
+--black:#222;
+--white:#fff;
+--light-black:#777;
+--light-white:#fff9;
+--dark-bg: rgba(0,0,0,0.7);
+--light-bg: #eee;
+--btn-bg: #4876f5;
+--border: 1rem solid var(--black);
+--box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+--text-shadow: 0 1.5rem 3rem rgba(0,0,0,0.3);
+--review-bg:radial-gradient(ellipse at center,   #F0FFFF  3rem, #EAF4FF 150%);
+}
+
+
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    opacity: .9;
+    image-resolution: 4000px;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: 3rem;
+}
+
+.about .image{
+    flex: 1 1 41rem;
+    margin-right: 2rem;
+}
+
+.about .image img{
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about .content .icons-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.about .content .icons-container .icons{
+    background: var(--light-bg);
+    padding: 2rem;
+    flex: 1 1 16rem;
+}
+
+.about .content .icons-container .icons i{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.about .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    display: block;
+}
+
+.reviews .review{
+    background-size: cover !important;
+    background-position: center !important;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    opacity: .9;
+    image-resolution: 4000px;
+}
+
+.reviews .review h1{
+    font-size: 10rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #777777;
+}
+
+.review h1:hover{
+    color: var(--main-color);
+}
+
+.reviews{
+    padding: 2rem;
+    background: var(--review-bg);
+    margin-bottom: 1rem;
+}
+
+.reviews .slide{
+    padding: 2rem;
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    user-select: none;
+    height: 330px !important;
+    width: 350px !important;
+    border-radius: 10%;
+}
+
+.reviews .slide .stars{
+    padding: .5rem;
+}
+
+.reviews .slide .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.reviews .slide p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 1.2;
+    padding: 1rem 0;
+}
+
+.reviews .slide h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .slide span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: block;
+}
+
+.reviews .slide img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+
+.reviewing{
+    width: 50%;
+}
+
+.review-section {
+    background: radial-gradient(ellipse at center, #EAF4FF, #3282B8);
+    position: relative;
+    padding: 20px;
+  }
+  
+  .review-section h2 {
+    color: #336699;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .review-section form {
+    margin-top: 20px;
+  }
+  
+  .review-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .review-section input[type="text"],
+  .review-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .review-section button[type="submit"] {
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

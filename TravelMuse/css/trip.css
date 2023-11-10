@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main-color: #8e44ad;
+    --black:#222;
+    --white:#fff;
+    --light-black:#bbb5b5;
+    --light-white:rgba(218, 215, 215, 0.6);
+    --dark-bg: rgba(0,0,0,0.7);
+    --light-bg: #eee;
+    --btn-bg: #4876f5;
+    --border: 1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0,0,0,0.3);
+    
+    }
+    
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 8rem;
+    padding-bottom: 17rem;
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    opacity: .9;
+    image-resolution: 4000px;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.booking .book-form{
+    padding: 2rem;
+    background: var(--light-bg);
+}
+
+.booking .book-form .flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border-radius: var(--border);
+}
+
+.booking .book-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    color: var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+    .booking .heading-title{
+        /* padding: .5rem; */
+        /* margin: .5rem; */
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking .btn{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 2rem;
+        background-color: var(--light-white);
+        color: var(--main-color);
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+    .booking .btn:hover{
+        color: var(--light-white);
+        background-color: var(--main-color);
+        transition: .2s linear; 
+    }
+
+    @media (max-width:880px){
+        .heading h1{
+            font-size: 6rem;
+        }
+    }
+
+    @media (max-width:678px){
+        .heading h1{
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width:441px){
+        .heading h1{
+            font-size: 2rem;
+        }
+    }
+    

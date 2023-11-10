@@ -1,0 +1,160 @@
+  /* City blocks styles */
+  .cities {
+    padding: 20px ;
+  }
+  
+  .city-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  
+  
+  .city-block {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+  }
+  
+  .city-block img {
+    max-width: 100%;
+    /* max-height: 150.5px; */
+  }
+  
+  .city-block h3 {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Location blocks styles */
+  .locations {
+    padding: 20px ;
+    background-color: #f1f1f4;
+  }
+  
+  .location-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .location-block {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .location-block img {
+    width: 100%;
+    height: 82%;
+  }
+  
+  .location-block h3 {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+ 
+  .button{
+    position: relative;
+    /* margin: 10px; */
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .go-live-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    /* padding: 10px 20px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+
+
+
+
+
+@media (max-width: 1050px) {
+  .city-block,
+  .location-block {
+    width: 25%;
+  }
+  .location-block img{
+    width: 100%;
+    height: 82%;
+  }
+}
+
+@media (max-width: 940px) {
+  .city-block,
+  .location-block {
+    width: 33.33%;
+  }
+  .location-block img{
+    width: 100%;
+    height: 82%;
+  }
+}
+
+@media (max-width: 881px) {
+  .city-block,
+  .location-block {
+    width: 50%;
+  }
+  .location-block img{
+    width: 100%;
+    height: 82%;
+  }
+}
+
+@media (max-width: 698px) {
+  .city-block,
+  .location-block {
+    width: 100%;
+  }
+  .location-block img{
+    width: 100%;
+    height: 82%;
+  }
+}
+
+@media (max-width: 450px) {
+  .city-block h3,
+  .location-block h3 {
+    font-size: 14px;
+  }
+  .location-block img{
+    width: 100%;
+    height: 82%;
+  }
+}

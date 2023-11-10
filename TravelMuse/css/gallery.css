@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  h2{
+    color: red;
+  }
+  
+  h1 {
+    margin: 0;
+     text-align: center;
+    animation: scale 1s infinite;
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #fff;
+  }
+  
+  .card-back {
+    background-color: #333;
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  .photo-box {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .photo-box {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%, 50% 80%, 40% 100%, 0% 100%);
+  }
+  .gallery {
+    border-bottom: 6px solid #000;
+    
+  }
+  
+  .images {
+    margin-block: 40px;
+    padding-top: 20px; /* Optional: Add some spacing between the gallery and the images */
+  }
